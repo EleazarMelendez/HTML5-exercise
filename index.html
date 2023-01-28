@@ -9,10 +9,12 @@
 </head>
 <body>
     <div class="form-box">
-        <div class="form-top">Payment Form Example</div>
+        <div class="form-top">Payment form example</div>
         <form>
             <div class="form-center">
-                <div class="form-error">Error message</div>
+                <div class="form-error">
+                    <div class="error-inner-box">Some fields are missing</div>
+                </div>
                 <div class="flexbox">
                     <fieldset class="inline-block" style="width:45%";>
                         <label for="card-number">Card #</label>
@@ -49,7 +51,7 @@
                     <fieldset class="inline-block" style="width:20%;">
                         <label for="state">State</label>
                         <select name="state" /> 
-                        <option value="" disabled selected>Select your state</option>
+                        <option value="" disabled selected>Pick a state</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -126,7 +128,7 @@
                     <fieldset class="inline-block" style="width:50%;">
                         <label for="message">Message</label>
                         <textarea name="message"></textarea>
-                        <h3>Any notes here.</h3>
+                        <h3>Add any notes here.</h3>
                     </fieldset>
                 </div>                
             </div>
