@@ -10,43 +10,43 @@
 <body>
     <div class="form-box">
         <div class="form-top">Payment Form Example</div>
-        <div class="form-error">Error message</div>
         <form>
             <div class="form-center">
+                <div class="form-error">Error message</div>
                 <div class="flexbox">
-                    <fieldset class="inline-block">
+                    <fieldset class="inline-block" style="width:45%";>
                         <label for="card-number">Card #</label>
                         <input type="number" name="card-number" placeholder="XXXX XXXX XXXX XXXX">
                     </fieldset>
-                    <fieldset class="inline-block">
+                    <fieldset class="inline-block" style="width:25%">
                         <label for="cvc-number">CVC #</label>
                         <input type="number" name="cvc-number" placeholder="0000">
                     </fieldset>
-                    <fieldset class="inline-block">
+                    <fieldset class="inline-block" style="width:30%">
                         <label for="amount">Amount</label>
                             <div class="flexbox">
-                                $<input type="number" name="amount" placeholder="Amount">
+                                <br>$<input type="number" name="amount" placeholder="Amount">
                             </div>
                         </fieldset>
                 </div>
 
                 <div class="flexbox">
-                    <fieldset class="inline-block">
+                    <fieldset class="inline-block" style="width:50%;">
                         <label for="first-name">First Name</label>
                         <input type="text" name="first-name">
                     </fieldset>
-                    <fieldset class="inline-block">
+                    <fieldset class="inline-block" style="width:50%;">
                         <label for="last-name">Last Name</label>
                         <input type="text" name="last-name">
                     </fieldset>
                 </div>
 
                 <div class="flexbox">
-                    <fieldset class="inline-block">
+                    <fieldset class="inline-block" style="width:50%;">
                         <label for="city">City</label>
                         <input type="text" name="city">
                     </fieldset>
-                    <fieldset class="inline-block">
+                    <fieldset class="inline-block" style="width:20%;">
                         <label for="state">State</label>
                         <select name="state" /> 
                         <option value="" disabled selected>Select your state</option>
@@ -103,35 +103,39 @@
                         <option value="WY">Wyoming</option> 
                         <select />
                     </fieldset>
-                    <fieldset class="inline-block">
+                    <fieldset class="inline-block" style="width:25%;">
                         <label for="postal-code">Postal Code</label>
                         <input type="number" name="postal-code">
                     </fieldset>
                 </div>
                 
                 <div class="flexbox">
-                    <fieldset class="inline-block">
+                    <fieldset class="inline-block" style="width:50%;">
                         <label for="credit-cards">We Accept:</label>
-                        <div class="flexbox" style="background-color:#6C757D;">
+                        <div class="cc-box" class="flexbox">
                             <input type="radio" name="credit-cards" value="mastercard">
                             <img src="https://www.pngfind.com/pngs/b/208-2088342_master-card-logo-png.png" />
                             <input type="radio" name="credit-cards" value="visa">
                             <img src="https://www.pngfind.com/pngs/b/533-5337859_black-ops-3-kuda-png.png" />
-                            <input type="radio" name="credit-cards" value="diners">
-                            <img src="https://www.pngfind.com/pngs/b/208-2088342_master-card-logo-png.png" />
+                            <input type="radio" name="credit-cards" value="bitcoin">
+                            <img src="https://www.kindpng.com/picc/b/560-5604418_lil-b-png.png" />
                             <input type="radio" name="credit-cards" value="amex">
                             <img src="https://www.pngfind.com/pngs/b/61-613131_american-express-logo-png.png" />
                         </div>
                     </fieldset>
-                    <fieldset class="inline-block">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name">
+                    <fieldset class="inline-block" style="width:50%;">
+                        <label for="message">Message</label>
+                        <textarea name="message"></textarea>
+                        <h3>Any notes here.</h3>
                     </fieldset>
-                </div>
-                <fieldset>Fourth fieldset</fieldset>
-                <fieldset>Submit buttons</fieldset>
+                </div>                
             </div>
-            
+            <div class="form-bottom">
+                <fieldset>
+                    <button>Send</button>
+                    <button>Cancel</button>
+                </fieldset>
+            </div>
         </form>
     </div>
     
